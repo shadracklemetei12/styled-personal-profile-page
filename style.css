@@ -1,0 +1,157 @@
+/* =========================
+   CSS CUSTOM PROPERTIES
+========================== */
+:root {
+    --primary: #1e3a8a;
+    --secondary: #f8fafc;
+    --accent: #3b82f6;
+    --text: #1f2937;
+    --white: #ffffff;
+    --shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* =========================
+   GLOBAL STYLING
+========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--secondary);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+/* =========================
+   HEADER & NAVIGATION
+========================== */
+header {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 20px 40px;
+    box-shadow: 0 4px 8px var(--shadow);
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--accent);
+    transform: translateY(-2px);
+}
+
+/* =========================
+   MAIN CONTENT
+========================== */
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+section {
+    background-color: var(--white);
+    margin-bottom: 30px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px var(--shadow);
+    border-left: 6px solid var(--accent);
+}
+
+h2 {
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* =========================
+   PROFILE IMAGE
+========================== */
+#profile-picture {
+    text-align: center;
+}
+
+#profile-picture img {
+    width: 220px;
+    border-radius: 50%;
+    border: 5px solid var(--accent);
+    box-shadow: 0 6px 15px var(--shadow);
+}
+
+/* =========================
+   SKILLS LIST
+========================== */
+ol {
+    padding-left: 20px;
+}
+
+ol li {
+    margin-bottom: 10px;
+}
+
+/* =========================
+   ARTICLE STYLING
+========================== */
+article {
+    background-color: #f1f5f9;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #dbeafe;
+}
+
+/* =========================
+   FOOTER
+========================== */
+footer {
+    text-align: center;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================== */
+@media (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    #profile-picture img {
+        width: 170px;
+    }
+}
